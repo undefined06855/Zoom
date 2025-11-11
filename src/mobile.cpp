@@ -80,6 +80,7 @@ bool AndroidZoomLayer::init(CCNode* sceneLayer) {
 	backMenu->addChild(backBtn);
 
 	this->setID("AndroidZoomLayer"_spr);
+    this->setZOrder(11); // One above PauseLayer
 
 	CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, -250, true);
 	this->setTouchEnabled(true);
